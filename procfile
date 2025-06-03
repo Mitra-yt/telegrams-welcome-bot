@@ -1,1 +1,2 @@
-web: python welcome_bot.py
+web: gunicorn webserver:app
+worker: python welcome_bot.py
